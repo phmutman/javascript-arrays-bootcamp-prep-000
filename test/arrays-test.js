@@ -87,7 +87,7 @@ describe('arrays', () => {
     it('alters the original array', ()=>{
       var array = [1, 2, 3];
       destructivelyRemoveElementFromBeginningOfArray(array);
-      expect([1, 2, 3].shift()).to.eql([2, 3]);
+      expect(array).to.eql([2, 3]);
     })
   })
 
